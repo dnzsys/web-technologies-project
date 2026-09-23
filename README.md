@@ -2,6 +2,9 @@
 
 Bu proje, Web Teknolojileri dersi kapsamında haftalık sprintler halinde geliştirilen iteratif bir web platformudur. Proje çevik (agile) prensiplere sadık kalınarak her hafta yeni özellikler eklenerek büyütülecektir.
 
+## 🚀 Canlı Önizleme (Live URL)
+**Vercel Adresi:** (https://web-technologies-project-blond.vercel.app)
+
 ## 🛠 Sprint 1 - Temel HTML İskeleti
 Bu sprint kapsamında projenin anlamsal (semantic) HTML yapıları kurulmuştur. Tasarım (CSS) veya işlevsellik (JavaScript) henüz projeye dahil edilmemiştir.
 
