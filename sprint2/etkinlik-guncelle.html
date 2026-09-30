@@ -3,42 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etkinlik Ekle</title>
-    <link rel="stylesheet" href="css/2311012037.css">
+    <title>Etkinlik Güncelle</title>
+    <link rel="stylesheet" href="css/20261005.css">
 </head>
 <body>
     <header>
-        <h1>Etkinlik Ekle</h1>
+        <h1>Etkinlik Güncelle</h1>
         <nav>
             <a href="index.html">Ana Sayfa</a>
             <a href="etkinlikler.html">Etkinlikler</a>
-            <a href="etkinlik-ekle.html" class="aktif">Ekle</a>
-            <a href="etkinlik-guncelle.html">Güncelle</a>
+            <a href="etkinlik-ekle.html">Ekle</a>
+            <a href="etkinlik-guncelle.html" class="aktif">Güncelle</a>
         </nav>
     </header>
     <main>
         <form action="#" method="POST">
             <p>
                 <label for="etkinlikAdi">Etkinlik adı</label>
-                <input type="text" id="etkinlikAdi" name="etkinlikAdi" required placeholder=" ">
+                <input type="text" id="etkinlikAdi" name="etkinlikAdi" value="Kariyer Günleri 2026" required placeholder=" ">
             </p>
             <p>
                 <label for="kategori">Kategori</label>
                 <select id="kategori" name="kategori" required>
-                    <option value="">Seçiniz</option>
-                    <option value="seminer">Seminer</option>
+                    <option value="seminer" selected>Seminer</option>
                     <option value="atolye">Atölye</option>
                 </select>
             </p>
             <p>
                 <label for="tarihSaat">Tarih</label>
-                <input type="datetime-local" id="tarihSaat" name="tarihSaat" required>
+                <input type="datetime-local" id="tarihSaat" name="tarihSaat" value="2026-10-12T14:00" required>
             </p>
             <p>
                 <label for="aciklama">Açıklama</label>
-                <textarea id="aciklama" name="aciklama" rows="5" required placeholder=" "></textarea>
+                <textarea id="aciklama" name="aciklama" rows="5" required placeholder=" ">Mezun söyleşileri</textarea>
             </p>
-            <button type="submit">Kaydet</button>
+            <button type="submit">Güncelle</button>
         </form>
     </main>
 </body>

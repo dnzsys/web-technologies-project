@@ -33,6 +33,20 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     margin-right: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+nav a.aktif {
+    border-bottom: 2px solid white;
+}
+
+a:hover, button:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 .etkinlik-grid {
