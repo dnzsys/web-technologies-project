@@ -96,6 +96,26 @@ textarea:invalid:not(:placeholder-shown) {
     border-color: red;
 }
 
+.kunye dl {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: var(--kose);
+    padding: var(--bosluk-m);
+    margin-top: 0;
+    
+    display: grid;
+    grid-template-columns: max-content 1fr; 
+    gap: 0.8rem 1rem;
+}
+
+.kunye dt {
+    font-weight: bold;
+}
+
+.kunye dd {
+    margin: 0;
+}
+
 button {
     background-color: var(--renk-ana);
     color: white;
