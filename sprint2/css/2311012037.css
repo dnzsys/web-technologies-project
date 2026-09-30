@@ -1,0 +1,130 @@
+:root {
+    --no: 2311012037;
+    --ton: mod(var(--no), 360);
+    --renk-ana: hsl(var(--ton) 65% 38%);
+    --renk-zemin: hsl(var(--ton) 30% 97%);
+    --font: "Palatino Linotype", serif;
+    --bosluk-m: 1rem;
+    --kose: 8px;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--renk-zemin);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+main, footer {
+    padding: var(--bosluk-m);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--renk-ana);
+    color: white;
+    padding: var(--bosluk-m) max(var(--bosluk-m), calc((100% - 1200px) / 2));
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.etkinlik-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--bosluk-m);
+}
+
+article {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: var(--kose);
+    padding: var(--bosluk-m);
+}
+
+article a {
+    color: var(--renk-ana);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+section > a {
+    color: var(--renk-ana);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.detay-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--bosluk-m);
+}
+
+.detay-layout img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--kose);
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: var(--kose);
+    font-family: inherit;
+}
+
+input:invalid:not(:placeholder-shown), 
+textarea:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+button {
+    background-color: var(--renk-ana);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--kose);
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .etkinlik-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .ikili-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detay-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .detay-layout figure {
+        flex: 1;
+        margin: 0;
+    }
+    
+    .detay-layout .kunye {
+        flex: 2;
+    }
+}
