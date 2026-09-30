@@ -52,8 +52,14 @@ article a {
     color: var(--renk-ana);
     font-weight: bold;
     text-decoration: none;
+    display: block;
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+article p {
     display: inline-block;
-    margin-top: 0.5rem;
+    margin: 0.2rem 0.8rem 0.5rem 0;
 }
 
 section > a {
@@ -119,10 +125,13 @@ textarea:invalid:not(:placeholder-shown) {
 button {
     background-color: var(--renk-ana);
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1rem;
     border: none;
     border-radius: var(--kose);
     cursor: pointer;
+    display: block;
+    width: 90%;
+    margin: 1.5rem auto;
 }
 
 @media (min-width: 768px) {
@@ -146,5 +155,10 @@ button {
     
     .detay-layout .kunye {
         flex: 2;
+    }
+
+    button {
+        width: auto;
+        margin: 1rem 0;
     }
 }
