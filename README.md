@@ -4,7 +4,6 @@ Bu proje, Web Teknolojileri dersi kapsamında haftalık sprintler halinde geliş
 
 ## 🌐 Canlı Önizleme (Live URL)
 **Vercel Adresi:** https://web-technologies-project-blond.vercel.app
-*(Test için detay sayfasına URL'den `?id=event-3` ekleyerek erişebilirsiniz.)*
 
 ## 🚀 Sprint 3 - JavaScript ve DOM Manipülasyonu
 Bu sprint kapsamında HTML içerisindeki statik veriler kaldırılarak sayfalar JavaScript (ES6 Modülleri) ile dinamik hale getirilmiştir.
