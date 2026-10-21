@@ -25,7 +25,18 @@ main, footer {
 header {
     background-color: var(--renk-ana);
     color: white;
-    padding: var(--bosluk-m) max(var(--bosluk-m), calc((100% - 1200px) / 2));
+    padding: var(--bosluk-m) max(var(--bosluk-m), calc((100% - 1200px) / 2)) 0.5rem;
+}
+
+header h1, header p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    background-color: var(--renk-ana);
+    color: white;
+    padding: 0 max(var(--bosluk-m), calc((100% - 1200px) / 2)) var(--bosluk-m);
 }
 
 nav a {
@@ -207,7 +218,8 @@ button {
     box-sizing: border-box;
 }
 
-#sonuc {
+#sonuc,
+.sonuc {
     font-weight: bold;
     color: var(--renk-ana);
     font-size: 0.9rem;
