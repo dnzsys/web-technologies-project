@@ -1,10 +1,18 @@
 # Kampüs Etkinlikleri — Web Teknolojileri Projesi
 
+**Öğrenci:** Deniz Opak (`2311012037`)  
 **Canlı Vercel Adresi:** https://denizopak-frontend.vercel.app
 
-Bu proje, Web Teknolojileri dersi kapsamında haftalık sprintler halinde geliştirilen **Kampüs Etkinlik Yönetim Sistemi** frontend uygulamasıdır.
+Bu proje, Web Teknolojileri dersi kapsamında haftalık sprintler halinde geliştirilen **Kampüs Etkinlik Yönetim Sistemi** (`frontend/` ve `backend/`) uygulamasıdır.
+
+## Klasör Yapısı
+
+- **`frontend/`**: React + Vite + TypeScript SPA uygulaması (`http://localhost:5173`)
+- **`backend/`**: Node.js + Express REST API sunucusu (`http://localhost:3000`)
 
 ## Kurulum ve Çalıştırma
+
+### Frontend
 
 ```bash
 cd frontend
@@ -12,14 +20,18 @@ npm install
 npm run dev
 ```
 
-Üretim (production) derlemesi almak için:
+### Backend (Sprint 7 — Express REST API)
 
 ```bash
-cd frontend
-npm run build
+cd backend
+npm install
+cp .env.example .env
+npm run dev
 ```
 
-## Route Listesi (Sprint 6 + Vize)
+Detaylı REST API sözleşmesi için [`backend/README.md`](./backend/README.md) dosyasına, Postman koleksiyonu için [`backend/requests/kampus-api.json`](./backend/requests/kampus-api.json) dosyasına bakabilirsiniz.
+
+## Frontend Route Listesi (Sprint 6 + Vize)
 
 | Adres | Sayfa Bileşeni | Açıklama |
 | :--- | :--- | :--- |
@@ -33,23 +45,3 @@ npm run build
 | `/register` | `RegisterPage` | Kayıt formu ve şifre eşleşme doğrulaması (demo) |
 | `/forgot-password` | `ForgotPasswordPage` | Şifre yenileme bağlantısı gönderim formu (demo) |
 | `*` | `NotFoundPage` | Eşleşmeyen adresler ve bulunamayan etkinlikler için 404 sayfası |
-
-## Klasör Yapısı (`frontend/src`)
-
-- **`components/layout/`**: `Header.tsx`, `Navigation.tsx`, `Footer.tsx`
-- **`components/events/`**: `EventCard.tsx`, `EventList.tsx`, `EventFilter.tsx`, `EventDetail.tsx`
-- **`components/forms/`**: `EventForm.tsx` (kontrollü form ve doğrulama)
-- **`context/`**: `EventsContext.tsx` (`EventsProvider` ve `useEvents` custom hook)
-- **`pages/`**: 10 sayfa bileşeni (`HomePage`, `EventsPage`, `EventDetailPage`, `AdminPage`, `AddEventPage`, `EditEventPage`, `LoginPage`, `RegisterPage`, `ForgotPasswordPage`, `NotFoundPage`)
-- **`data/`**: `events.ts` (başlangıç etkinlik verileri)
-- **`types/`**: `campus-event.ts` (`Category`, `CampusEvent`, `EventFormData`, `EventFormErrors`)
-- **`utils/`**: `filter-events.ts`, `format-date.ts`, `validate-event.ts`
-
-## Sprint Geçmişi
-
-- **Sprint 6 + Vize:** `react-router-dom` ile 10 route/sayfa yapısı, `EventsContext` ile merkezi state yönetimi (ekle, güncelle, onaylı sil), kontrollü formlar ve doğrulama (`validateEvent`, giriş/kayıt/şifremi unuttum) ve mobil uyumlu yönetim tablosu eklendi.
-- **Sprint 5:** Uygulama modüler React bileşenlerine ayrıldı (`props`, `callback`, bileşen mimarisi).
-- **Sprint 4:** Vite + React + TypeScript SPA yapısına geçildi; arama ve kategori filtreleme eklendi.
-- **Sprint 3:** ES6 modülleri ve DOM manipülasyonu ile dinamik listeleme yapıldı.
-- **Sprint 2:** Öğrenci numarasına özel dinamik HSL renk teması ve duyarlı (responsive) CSS Grid kuruldu.
-- **Sprint 1:** Semantik HTML5 sayfa iskeletleri oluşturuldu.
