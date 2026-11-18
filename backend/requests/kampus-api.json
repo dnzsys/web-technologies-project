@@ -1,6 +1,6 @@
 {
   "info": {
-    "_postman_id": "7a4e8c92-3b1f-4d8e-9a21-231101203707",
+    "_postman_id": "7a4e8c92-3b1f-4d8e-9a21-231101203708",
     "name": "Kampüs API",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
@@ -49,7 +49,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:3000/events/event-2",
+          "raw": "http://localhost:3000/events/6afd49902ee62cc77ce491f4",
           "protocol": "http",
           "host": [
             "localhost"
@@ -57,7 +57,7 @@
           "port": "3000",
           "path": [
             "events",
-            "event-2"
+            "6afd49902ee62cc77ce491f4"
           ]
         }
       },
@@ -69,7 +69,7 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:3000/events/yok",
+          "raw": "http://localhost:3000/events/111111",
           "protocol": "http",
           "host": [
             "localhost"
@@ -77,7 +77,7 @@
           "port": "3000",
           "path": [
             "events",
-            "yok"
+            "111111"
           ]
         }
       },
@@ -96,7 +96,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"title\": \"Git Atölyesi\",\n  \"category\": \"Atölye\",\n  \"capacity\": 30,\n  \"date\": \"2026-12-01\",\n  \"time\": \"14:00\",\n  \"location\": \"Bilgisayar Laboratuvarı 1\",\n  \"description\": \"Git ve GitHub ile ilk adımlar.\"\n}",
+          "raw": "{\n  \"title\": \"Git Atölyesi\",\n  \"category\": \"Atölye\",\n  \"date\": \"2026-12-01\",\n  \"time\": \"14:00\",\n  \"location\": \"Bilgisayar Laboratuvarı 1\",\n  \"capacity\": 30,\n  \"description\": \"Git ve GitHub ile ilk adımlar.\"\n}",
           "options": {
             "raw": {
               "language": "json"

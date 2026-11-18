@@ -20,12 +20,13 @@ npm install
 npm run dev
 ```
 
-### Backend (Sprint 7 — Express REST API)
+### Backend (Sprint 7 & 8 — Express + MongoDB REST API)
 
 ```bash
 cd backend
 npm install
 cp .env.example .env
+npm run seed
 npm run dev
 ```
 
