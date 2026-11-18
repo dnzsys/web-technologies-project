@@ -1,6 +1,5 @@
-export const events = [
+export const seedEvents = [
   {
-    id: "event-1",
     title: "Bulut Bilişim ve DevOps Günü",
     category: "Seminer",
     capacity: 120,
@@ -10,7 +9,6 @@ export const events = [
     description: "Modern bulut mimarileri, konteyner teknolojileri ve sürekli dağıtım süreçleri üzerine teknik oturumlar."
   },
   {
-    id: "event-2",
     title: "Gömülü Sistemler ve IoT Kampı",
     category: "Atölye",
     capacity: 25,
@@ -20,7 +18,6 @@ export const events = [
     description: "ESP32 mikrodenetleyiciler ile kablosuz sensör ağları kurma ve gerçek zamanlı veri izleme uygulaması."
   },
   {
-    id: "event-3",
     title: "Oyun Geliştirme ve Grafik Motorları Sohbeti",
     category: "Söyleşi",
     capacity: 60,
@@ -30,7 +27,6 @@ export const events = [
     description: "Bağımsız oyun stüdyosu kurucularıyla oyun fiziği, gölgelendiriciler ve yayıncılık süreçleri üzerine söyleşi."
   },
   {
-    id: "event-4",
     title: "Modern TypeScript ve API Tasarımı",
     category: "Atölye",
     capacity: 35,
@@ -40,7 +36,6 @@ export const events = [
     description: "Uçtan uca tip güvenli REST servisleri geliştirme ve hata yönetimi pratikleri."
   },
   {
-    id: "event-5",
     title: "Açık Kaynak Yazılım ve Topluluk Kültürü",
     category: "Seminer",
     capacity: 90,
@@ -50,7 +45,6 @@ export const events = [
     description: "Küresel açık kaynak projelere ilk katkıyı yapma, sürüm kontrol iş akışları ve kod inceleme kültürü."
   },
   {
-    id: "event-6",
     title: "Kampüs Algoritma ve Kodlama Maratonu",
     category: "Yarışma",
     capacity: 75,
