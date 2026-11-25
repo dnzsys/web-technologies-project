@@ -29,19 +29,25 @@ npm start
 
 | Method | Endpoint | Amaç | Başarılı | Hata | Durum |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `GET` | `/health` | Sunucu sağlık kontrolü | `200` | — | Tamamlandı |
-| `GET` | `/events` | Listeyi getir (`?category=` isteğe bağlı) | `200` | — | Tamamlandı |
-| `GET` | `/events/:id` | Tek etkinlik (`_id` ile) | `200` | `404` | Tamamlandı |
-| `POST` | `/events` | Yeni etkinlik | `201` | `400` | Tamamlandı |
-| `PATCH` | `/events/:id` | Güncelle | `200` | `400`, `404` | Sprint 9 |
-| `DELETE` | `/events/:id` | Sil | `204` | `404` | Sprint 9 |
+| `GET` | `/health` | Sunucu sağlık kontrolü | `200` | — | Çalışıyor |
+| `GET` | `/events` | Listeyi getir (`?search=` ve `?category=` isteğe bağlı) | `200` | — | Çalışıyor |
+| `GET` | `/events/upcoming` | Bugün ve sonrası etkinlikler (tarihe göre sıralı) | `200` | — | Çalışıyor |
+| `GET` | `/events/:id` | Tek etkinlik (`_id` ile) | `200` | `404` | Çalışıyor |
+| `POST` | `/events` | Yeni etkinlik | `201` | `400` | Çalışıyor |
+| `PATCH` | `/events/:id` | Güncelle (kısmi güncelleme) | `200` | `400`, `404` | Çalışıyor |
+| `DELETE` | `/events/:id` | Sil (gövdesiz yanıt) | `204` | `404` | Çalışıyor |
+
+### Tarih Biçimi
+
+- API genelinde tarihler `"GG-AA-YYYY"` biçimindedir (örnek: `"15-10-2026"`).
+- Veritabanında gerçek `Date` olarak saklanır, JSON yanıtında `"GG-AA-YYYY"` olarak döner.
 
 ### Durum Kodları (Status Codes)
 
 - **`200`** tamam (OK)
 - **`201`** oluşturuldu (Created)
-- **`204`** içerik yok (No Content)
-- **`400`** eksik/yanlış veri (Bad Request — Mongoose `ValidationError`)
+- **`204`** içerik yok (No Content — yanıt gövdesi yok)
+- **`400`** eksik/yanlış veri (Bad Request — Mongoose `ValidationError` / `CastError` veya korunan alan)
 - **`404`** bulunamadı (Not Found — geçersiz veya olmayan `_id`)
 - **`500`** sunucu hatası (Internal Server Error)
 
